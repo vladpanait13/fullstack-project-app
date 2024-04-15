@@ -1,0 +1,93 @@
+# 1. Initialize a new React application using Vite and TypeScript:
+
+npm init @vitejs/app frontend --template react-ts
+cd frontend
+
+####### Install dependencies including Redux for state management and Axios
+
+npm install @reduxjs/toolkit react-redux axios
+
+####### (This will install Redux Toolkit for state management, React Redux for 
+connecting React components to Redux, and Axios for making HTTP
+requests.)
+
+####### Install React Query for data fetching and caching:
+
+npm install react-query
+
+# 2. Redux Toolkit Setup
+
+####### Create a Redux slice to define the initial state and reducers 'auth.ts'
+
+####### Combine the reducers into a root reducer 'store.ts'
+
+####### Provider: Wrap the root component with the Redux Provider and provide the Redux store 'index.tsx'
+
+####### Set Up React Query in the application 'index.tsx'
+
+# 3. Install React Router for routing in the application 
+
+npm install react-router-dom
+
+####### Create Routes component to define application routes 'routes.tsx'
+####### Create two pages, MainPage and InvoicesPage
+####### Use Routes component in the App component to render the routes 'App.tsx'
+
+# Frontend App
+
+This project is a frontend application built with React, Redux Toolkit, React Query, and React Router.
+
+## Getting Started
+
+1. Clone the repository.
+2. Navigate to the frontend directory: `frontend`.
+3. Install dependencies: `npm install`.
+4. Start the development server: `npm run dev`.
+
+## Features
+
+- **State Management**: Uses Redux Toolkit for state management.
+- **Data Fetching**: Utilizes React Query for data fetching and caching.
+- **Routing**: Implements client-side routing with React Router.
+- **Popup/Modal**: Displays detailed information in a popup/modal when clicking on an invoice.
+- **Error Handling**: Handles potential failed API requests gracefully.
+- **Pagination**: Allows navigation through paginated data.
+
+## Project Structure
+
+- **frontend/dummy**: Dummy pages created using CSS, JS and HTML
+- **frontend/components**: Contains reusable components.
+- **frontend/authSlice.ts**: Contains Redux slice files for different features.
+- **frontend/pages**: Contains main page components.
+- **frontend/app**: Contains store configuration and root component.
+- **frontend/Routes.tsx**: Defines application routes.
+
+## Environment Variables
+
+- No specific environment variables required for this project.
+
+## Dependencies
+
+- **@reduxjs/toolkit**: For state management.
+- **react-redux**: For connecting React components to Redux.
+- **axios**: For making HTTP requests.
+- **react-router-dom**: For client-side routing.
+- **react-query**: For data fetching and caching.
+
+## Available Scripts
+
+- `npm start`: Start the development server.
+- `npm run build`: Build the production-ready bundle.
+- `npm test`: Run tests.
+
+## Contributing
+
+Feel free to contribute to this project by submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
+

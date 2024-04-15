@@ -1,0 +1,62 @@
+.app-container {
+  display: flex;
+}
+
+.left-menu {
+  background-color: blue;
+  width: 200px;
+  padding: 20px;
+}
+
+.left-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-menu ul li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.right-menu {
+  margin-top: 20px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.right-menu button {
+  margin-right: 10px;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

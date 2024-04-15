@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Components in HTML</title>
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      /* CSS styling */
+      .left-menu {
+        background-color: blue;
+        width: 200px;
+        padding: 20px;
+        float: left;
+      }
+
+      .left-menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .left-menu ul li {
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .search-bar {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      .right-menu {
+        margin-top: 20px;
+        margin-left: calc(100% - 200px);
+        display: flex;
+        align-items: center;
+      }
+
+      .right-menu button {
+        margin-right: 10px;
+      }
+
+      .profile-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: gray;
+      }
+
+      .table {
+        margin-top: 20px;
+        clear: both;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left Menu -->
+    <div class="left-menu">
+      <ul>
+        <li>Home</li>
+        <li>Invoices</li>
+        <li>Bills</li>
+        <li>Expenses</li>
+        <li>Reports</li>
+      </ul>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <!-- Right Menu -->
+    <div class="right-menu">
+      <button><i class="fas fa-bell"></i></button>
+      <button><i class="fas fa-cog"></i></button>
+      <button><i class="far fa-moon"></i></button>
+      <div class="profile-avatar"></div>
+    </div>
+
+    <!-- Table -->
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Payee</th>
+            <th>Description</th>
+            <th>Due Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows go here -->
+          <tr>
+            <td>09/11/23</td>
+            <td>Amazon</td>
+            <td>Rental</td>
+            <td>10/31/2023</td>
+            <td></td>
+            <td>Paid</td>
+          </tr>
+          <tr>
+            <td>09/11/23</td>
+            <td>Sysco</td>
+            <td>Rental</td>
+            <td>10/31/2023</td>
+            <td>$228.75</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>09/11/23</td>
+            <td>US Foods</td>
+            <td>Rental</td>
+            <td>10/31/2023</td>
+            <td></td>
+            <td>Paid</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

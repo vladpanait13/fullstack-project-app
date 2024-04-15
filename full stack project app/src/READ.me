@@ -1,0 +1,53 @@
+# Initializing a new NestJS project:
+
+npm install -g @nestjs/cli
+nest new backend-api
+cd backend-api
+
+# Set up PostgreSQL database configuration in prisma/schema.prisma:
+
+# Generate Prisma client: in bash, type 'npx prisma generate'
+
+
+# Backend API
+
+This project is a backend API built with NestJS, TypeScript, Prisma, 
+and PostgreSQL.
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+
+npm install @nestjs/typeorm @nestjs/passport @nestjs/jwt passport passport-jwt pg pg-hstore prisma reflect-metadata class-validator zod
+npm install --save-dev @types/passport-jwt @types/reflect-metadata
+
+3. Set up environment variables: Create a `.env` file based on `.env.example` and provide your PostgreSQL database URL.
+4. Run the project: `npm run start:dev`
+
+## API Endpoints
+
+### Authentication
+
+- POST /auth/login: Authenticate a user and generate an access token.
+
+#### Request Body
+
+```json
+{
+  "email": "user@example.com",
+  "password": "password"
+}
+
+#### Response:
+
+``` json
+
+{
+  "access_token": "your_access_token"
+}
+
+### Invoices
+
+- GET /invoices: Retrieve all invoices
+- GET /invoices/:id: Retrieve details of a specific invoice by its id
